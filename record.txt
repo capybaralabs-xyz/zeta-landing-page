@@ -1,0 +1,3 @@
+Type: A
+Name: @
+Value: 76.76.21.21
