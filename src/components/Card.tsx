@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Button, Flex, Text, Image } from '@chakra-ui/react';
-import Group1 from '../assets/Group1.png';
+
 import light from '../assets/light.png';
-export default function Card() {
+export default function Card({ asset }: { asset: string }) {
   return (
     <Flex
       width={'100%'}
@@ -78,9 +78,10 @@ export default function Card() {
           lg: '10rem',
           xl: '12.8rem',
         }}
+        mr={'2rem'}
       >
         <Image
-          src={Group1}
+          src={asset}
           width={{
             base: '8rem',
             sm: '10rem',
