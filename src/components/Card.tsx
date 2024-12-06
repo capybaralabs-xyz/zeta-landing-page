@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, Button, Flex, Text, Image } from '@chakra-ui/react';
-
-import light from '../assets/light.png';
 import { goto } from '../utils';
 export default function Card({
   title,
@@ -29,15 +27,15 @@ export default function Card({
       gap={{ base: '2rem', sm: '1rem' }}
       alignItems={'center'}
       justifyContent={'space-between'}
-      direction={{ base: 'column-reverse', sm: 'row' }}
+      direction={{ base: 'column-reverse', md: 'row' }}
     >
       <Flex
         direction={'column'}
         justifyContent={'space-between'}
         gap={'3rem'}
-        width={{ base: '100%', sm: '60%' }}
+        width={{ base: '100%', md: '60%' }}
       >
-        <Box gap={{ base: '2rem', sm: '1rem' }}>
+        <Box gap={{ base: '2rem', md: '1rem' }}>
           <Text
             fontWeight={'700'}
             fontSize={{
@@ -48,27 +46,27 @@ export default function Card({
               xl: '2.4rem',
             }}
             whiteSpace={'nowrap'}
-            mb={{ base: '0.5rem', sm: 0 }}
-            textAlign={{ base: 'center', sm: 'left' }}
+            mb={{ base: '0.5rem', md: 0 }}
+            textAlign={{ base: 'center', md: 'left' }}
           >
             {title}
           </Text>
           <Text
             fontWeight={'500'}
             fontSize={{ base: '1.2rem', lg: '1.6rem' }}
-            lineHeight={{ base: '1.9rem', sm: '2.5rem' }}
-            textAlign={{ base: 'center', sm: 'left' }}
+            lineHeight={{ base: '1.9rem', md: '2.5rem' }}
+            textAlign={{ base: 'center', md: 'left' }}
           >
             {content}
           </Text>
         </Box>
         <Flex
-          alignItems={{ base: 'center', sm: 'flex-start' }}
+          alignItems={{ base: 'center', md: 'flex-start' }}
           direction={'column'}
         >
           <Button
             variant={'normal'}
-            mb={{ base: 0, sm: '0.5rem' }}
+            mb={{ base: 0, md: '0.5rem' }}
             padding={{
               base: '1.5rem 4.5rem',
               sm: '1.8rem 2.5rem',
@@ -79,67 +77,39 @@ export default function Card({
             onClick={() => {
               goto(url);
             }}
-            width={{ base: '70%', sm: 'auto' }}
+            width={{ base: '70%', md: 'auto' }}
           >
             Trade Now
           </Button>
           <Text
             fontWeight={'500'}
             fontSize={{ base: '1.2rem', lg: '1.6rem' }}
-            whiteSpace={{ base: 'normal', sm: 'nowrap' }}
+            whiteSpace={{ base: 'normal', md: 'nowrap' }}
             mt={'1rem'}
-            width={{ base: '70%', sm: 'auto' }}
-            textAlign={{ base: 'center', sm: 'left' }}
+            width={{ base: '70%', md: 'auto' }}
+            textAlign={{ base: 'center', md: 'left' }}
           >
             {remain}
           </Text>
         </Flex>
       </Flex>
       <Flex position={'relative'} mr={'2rem'}>
-        <Box
-          position={'absolute'}
-          width={{
-            base: '17rem',
-            sm: '18rem',
-            md: '18rem',
-            lg: '18rem',
-            xl: '22.8rem',
-          }}
-          height={{
-            base: '17rem',
-            sm: '18rem',
-            md: '18rem',
-            lg: '18rem',
-            xl: '22.8rem',
-          }}
-          // borderRadius={'50%'}
-          top={'-37%'}
-          left={'-50%'}
-        >
-          <Image src={light} width={'100%'} height={'100%'} />
-        </Box>
         <Image
           src={Logo}
           width={{
-            base: '9rem',
-            sm: '10rem',
-            md: '10rem',
-            lg: '10rem',
-            xl: '12.8rem',
+            base: '17rem',
+            sm: '20rem',
+            xl: '22.8rem',
           }}
           minW={{
-            base: '9rem',
-            sm: '10rem',
-            md: '10rem',
-            lg: '10rem',
-            xl: '12.8rem',
+            base: '17rem',
+            sm: '20rem',
+            xl: '22.8rem',
           }}
           height={{
-            base: '9rem',
-            sm: '10rem',
-            md: '10rem',
-            lg: '10rem',
-            xl: '12.8rem',
+            base: '17rem',
+            sm: '20rem',
+            xl: '22.8rem',
           }}
         />
 

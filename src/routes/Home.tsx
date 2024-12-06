@@ -36,9 +36,9 @@ const Home = () => {
             fontStyle={'italic'}
             position={'absolute'}
             bottom={{ base: '-1rem', lg: '-1rem' }}
-            right={{ base: '0', lg: '6.5rem' }}
+            right={{ base: '0' }}
             lineHeight={'1.1'}
-            width={{ base: '100%', lg: 'auto' }}
+            width={{ base: '100%' }}
             textAlign={{ base: 'center' }}
           >
             <Text>TRUSTED BY</Text>

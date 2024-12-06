@@ -76,7 +76,7 @@ export default function Footer() {
                     sm: '0.8rem',
                     md: '2rem',
                     lg: '2rem',
-                    xl: '4rem',
+                    xl: '2rem',
                   }}
                   py={'1rem'}
                   href={item.url}
