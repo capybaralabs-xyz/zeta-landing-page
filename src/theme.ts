@@ -1,6 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
 
-import "@fontsource/montserrat";
+import '@fontsource/montserrat';
+import '@fontsource/montserrat/500.css';
+import '@fontsource/montserrat/700-italic.css';
 
 const solidButtonBasicStyle = {
   color: 'white',
@@ -11,16 +13,16 @@ const solidButtonBasicStyle = {
   padding: 0,
   _disabled: {
     // opacity: 0.4,
-    cursor: 'not-allowed'
+    cursor: 'not-allowed',
   },
 };
 const theme = extendTheme({
   breakpoints: {
-    base: "20em", // 默认
-    sm: "30em", // 小屏幕
-    md: "48em", // 中等屏幕
-    lg: "68em", // 大屏幕
-    xl: "82em"
+    base: '20em', // 默认
+    sm: '30em', // 小屏幕
+    md: '48em', // 中等屏幕
+    lg: '68em', // 大屏幕
+    xl: '82em',
   },
   colors: {
     theme: '#000',
@@ -33,6 +35,7 @@ const theme = extendTheme({
         color: '#000',
         fontFamily: 'Montserrat',
         fontSize: '1.4rem',
+        fontWeight: 500,
       },
     },
   },
@@ -55,7 +58,7 @@ const theme = extendTheme({
           ...solidButtonBasicStyle,
         },
       },
-    }
+    },
   },
 });
 

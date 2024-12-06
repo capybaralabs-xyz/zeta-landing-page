@@ -1,7 +1,14 @@
 import React from 'react';
 import { Box, Flex, Image, Text, Link } from '@chakra-ui/react';
 import Logo from '../assets/Logo.png';
-import { FooterLinks } from '../utils';
+import {
+  discord_url,
+  FooterLinks,
+  goto,
+  medium_url,
+  telegram_url,
+  X_twitter_url,
+} from '../utils';
 import telegram from '../assets/telegram.png';
 import medium from '../assets/medium..png';
 import discord from '../assets/discord.png';
@@ -21,7 +28,7 @@ export default function Footer() {
         py={{ base: '0.5rem', md: '1rem', lg: '1.4rem', xl: '1.8rem' }}
         justifyContent={'space-between'}
         alignItems={'center'}
-        direction={{ base: 'column', lg: 'row' }}
+        direction={{ base: 'column-reverse', lg: 'row' }}
       >
         <Flex
           gap={{ base: 0, sm: '0.6rem' }}
@@ -58,7 +65,7 @@ export default function Footer() {
           justifyContent={'flex-end'}
           alignItems={'center'}
           gap={{ base: '0', sm: '0.8rem', md: '2rem', lg: '2rem', xl: '4rem' }}
-          direction={{ base: 'column', sm: 'row' }}
+          direction={{ base: 'column-reverse', sm: 'row' }}
         >
           <Flex>
             {FooterLinks.map((item) => {
@@ -76,6 +83,9 @@ export default function Footer() {
                   key={item.name}
                   _hover={{}}
                   fontSize={{ base: '1.2rem', md: '1.4rem' }}
+                  onClick={() => {
+                    goto(item.url);
+                  }}
                 >
                   {item.name}
                 </Link>
@@ -95,24 +105,36 @@ export default function Footer() {
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
+              onClick={() => {
+                goto(telegram_url);
+              }}
             >
               <Image src={telegram} />
             </Link>
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
+              onClick={() => {
+                goto(medium_url);
+              }}
             >
               <Image src={medium} />
             </Link>
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
+              onClick={() => {
+                goto(X_twitter_url);
+              }}
             >
               <Image src={X_twitter} />
             </Link>
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
+              onClick={() => {
+                goto(discord_url);
+              }}
             >
               <Image src={discord} />
             </Link>

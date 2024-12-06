@@ -2,31 +2,42 @@ import React from 'react';
 import { Box, Button, Flex, Text, Image } from '@chakra-ui/react';
 
 import light from '../assets/light.png';
-export default function Card({ asset }: { asset: string }) {
+import { goto, trade_url } from '../utils';
+export default function Card({
+  title,
+  content,
+  remain,
+  Logo,
+  url,
+}: {
+  title: string;
+  content: string;
+  remain: string;
+  Logo: string;
+  url: string;
+}) {
   return (
     <Flex
       width={'100%'}
-      p={{ base: '0.8rem', sm: '1rem', md: '2rem', lg: '2.5rem', xl: '3rem' }}
+      p={{ base: '2rem', md: '3rem' }}
       bg={'#fff'}
       boxShadow={'0px 6px 40px 0px rgba(0, 0, 0, 0.1)'}
       borderRadius={{
-        base: '1rem',
-        sm: '1.5rem',
-        md: '2rem',
-        lg: '3rem',
-        xl: '4rem',
+        base: '3rem',
+        lg: '4rem',
       }}
-      gap={'1rem'}
+      gap={{ base: '2rem', sm: '1rem' }}
       alignItems={'center'}
       justifyContent={'space-between'}
+      direction={{ base: 'column-reverse', sm: 'row' }}
     >
       <Flex
         direction={'column'}
         justifyContent={'space-between'}
-        gap={'4rem'}
-        width={'60%'}
+        gap={'3rem'}
+        width={{ base: '100%', sm: '60%' }}
       >
-        <Box gap={'1rem'}>
+        <Box gap={{ base: '2rem', sm: '1rem' }}>
           <Text
             fontWeight={'700'}
             fontSize={{
@@ -37,85 +48,100 @@ export default function Card({ asset }: { asset: string }) {
               xl: '2.4rem',
             }}
             whiteSpace={'nowrap'}
+            mb={{ base: '0.5rem', sm: 0 }}
+            textAlign={{ base: 'center', sm: 'left' }}
           >
-            Trading Perpetual Contracts
+            {title}
           </Text>
-          <Text fontWeight={'500'} fontSize={{ base: '1.2rem', xl: '1.6rem' }}>
-            Trade without any slippage and counterparty risk with up to 100x
-            leverage completely on-chain.
+          <Text
+            fontWeight={'500'}
+            fontSize={{ base: '1.2rem', lg: '1.6rem' }}
+            lineHeight={{ base: '1.9rem', sm: '2.5rem' }}
+          >
+            {content}
           </Text>
         </Box>
-        <Box>
+        <Flex
+          alignItems={{ base: 'center', sm: 'flex-start' }}
+          direction={'column'}
+        >
           <Button
             variant={'normal'}
-            mb={'0.5rem'}
+            mb={{ base: 0, sm: '0.5rem' }}
             padding={{
-              base: '1.5rem 1.5rem',
+              base: '1.5rem 4.5rem',
               sm: '1.8rem 2.5rem',
               md: '2rem 4.5rem',
-              lg: '2.2rem 6rem',
-              xl: '2.4rem 7rem',
+              lg: '2.4rem 9rem',
+              xl: '2.4rem 9rem',
             }}
-            onClick={() => {}}
+            onClick={() => {
+              goto(url);
+            }}
+            width={{ base: '70%', sm: 'auto' }}
           >
             Trade Now
           </Button>
           <Text
             fontWeight={'500'}
-            fontSize={{ base: '1.2rem', xl: '1.6rem' }}
-            whiteSpace={'nowrap'}
+            fontSize={{ base: '1.2rem', lg: '1.6rem' }}
+            whiteSpace={{ base: 'normal', sm: 'nowrap' }}
+            mt={'1rem'}
+            width={{ base: '70%', sm: 'auto' }}
+            textAlign={{ base: 'center', sm: 'left' }}
           >
-            Unlock the power of leverage with KTX.Finance now!
+            {remain}
           </Text>
-        </Box>
+        </Flex>
       </Flex>
-      <Flex
-        position={'relative'}
-        width={{
-          base: '8rem',
-          sm: '10rem',
-          md: '10rem',
-          lg: '10rem',
-          xl: '12.8rem',
-        }}
-        mr={'2rem'}
-      >
-        <Image
-          src={asset}
+      <Flex position={'relative'} mr={'2rem'}>
+        <Box
+          position={'absolute'}
           width={{
-            base: '8rem',
+            base: '17rem',
+            sm: '18rem',
+            md: '18rem',
+            lg: '18rem',
+            xl: '22.8rem',
+          }}
+          height={{
+            base: '17rem',
+            sm: '18rem',
+            md: '18rem',
+            lg: '18rem',
+            xl: '22.8rem',
+          }}
+          // borderRadius={'50%'}
+          top={'-37%'}
+          left={'-50%'}
+        >
+          <Image src={light} width={'100%'} height={'100%'} />
+        </Box>
+        <Image
+          src={Logo}
+          width={{
+            base: '9rem',
             sm: '10rem',
             md: '10rem',
             lg: '10rem',
             xl: '12.8rem',
           }}
           minW={{
-            base: '8rem',
+            base: '9rem',
             sm: '10rem',
             md: '10rem',
             lg: '10rem',
             xl: '12.8rem',
           }}
           height={{
-            base: '8rem',
+            base: '9rem',
             sm: '10rem',
             md: '10rem',
             lg: '10rem',
             xl: '12.8rem',
           }}
         />
-        <Box
-          position={'absolute'}
-          width={'140%'}
-          height={'140%'}
-          borderRadius={'50%'}
-          top={'-20%'}
-          left={'-20%'}
-          right={'-20%'}
-          bottom={'-20%'}
-        >
-          <Image src={light} width={'100%'} height={'100%'} />
-        </Box>
+
         {/* <Box width={'14rem'} height={'14rem'} position={'absolute'} filter={'blur(80.33px)'} top={'50%'} left={'50%'} m={'-7rem 0 0 -7rem'} bg={'rgba(255, 242, 195, 1)'}></Box> */}
       </Flex>
     </Flex>
