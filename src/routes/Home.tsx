@@ -2,8 +2,6 @@ import React from 'react';
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import Card from '../components/Card';
 import GroupLeft from '../assets/Group_left.png';
-import Group1 from '../assets/Group1.png';
-import Group2 from '../assets/Group2.png';
 import { CardContents } from '../utils';
 const Home = () => {
   return (

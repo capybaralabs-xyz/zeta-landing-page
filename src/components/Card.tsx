@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Button, Flex, Text, Image } from '@chakra-ui/react';
 
 import light from '../assets/light.png';
-import { goto, trade_url } from '../utils';
+import { goto } from '../utils';
 export default function Card({
   title,
   content,
