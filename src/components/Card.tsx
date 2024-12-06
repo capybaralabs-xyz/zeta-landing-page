@@ -57,6 +57,7 @@ export default function Card({
             fontWeight={'500'}
             fontSize={{ base: '1.2rem', lg: '1.6rem' }}
             lineHeight={{ base: '1.9rem', sm: '2.5rem' }}
+            textAlign={{ base: 'center', sm: 'left' }}
           >
             {content}
           </Text>

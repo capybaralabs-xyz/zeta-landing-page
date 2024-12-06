@@ -94,9 +94,9 @@ export default function Footer() {
           </Flex>
           <Flex
             gap={{
-              base: '1rem',
-              sm: '0.8rem',
-              md: '2rem',
+              base: '2rem',
+              // sm: '0.8rem',
+              // md: '2rem',
               lg: '2rem',
               xl: '4rem',
             }}

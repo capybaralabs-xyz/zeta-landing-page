@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Box,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -72,8 +71,6 @@ export default function Menu_mobile({ onClose, isOpen }: MenuProps) {
               </Flex>
             );
           })}
-
-          <Box height={'1px'} mt={'6rem'} background={'#eee'}></Box>
         </DrawerBody>
       </DrawerContent>
     </Drawer>
