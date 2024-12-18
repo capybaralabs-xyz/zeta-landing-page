@@ -4,19 +4,19 @@ import Group1 from '../assets/Group1.png';
 export const HeaderLinks = [
   {
     name: 'Trade',
-    url: 'https://landing-page-paop.vercel.app/',
+    url: 'https://app.goldenfinance.xyz/',
   },
   {
     name: 'KLP Pool',
-    url: 'https://landing-page-paop.vercel.app/',
+    url: 'https://app.goldenfinance.xyz/buy_glp',
   },
-  {
-    name: 'Staking Rewards',
-    url: 'https://landing-page-paop.vercel.app/',
-  },
+  // {
+  //   name: 'Staking Rewards',
+  //   url: 'https://landing-page-paop.vercel.app/',
+  // },
   {
     name: 'Stats',
-    url: 'https://landing-page-paop.vercel.app/',
+    url: 'https://stats.goldenfinance.xyz',
   },
 ];
 
@@ -43,7 +43,7 @@ export const telegram_url = '#';
 export const medium_url = '#';
 export const X_twitter_url = '#';
 export const discord_url = '#';
-export const trade_url = '#';
+export const trade_url = 'https://app.goldenfinance.xyz/';
 
 export const CardContents = [
   {

@@ -25,7 +25,7 @@ const theme = extendTheme({
     xl: '82em',
   },
   colors: {
-    theme: '#000',
+    theme: 'rgba(255, 177, 85, 1)',
   },
   styles: {
     global: {

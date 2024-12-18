@@ -4,15 +4,12 @@ import Logo from '../assets/Logo.png';
 import {
   discord_url,
   FooterLinks,
-  goto,
   medium_url,
   telegram_url,
   X_twitter_url,
 } from '../utils';
-import telegram from '../assets/telegram.png';
-import medium from '../assets/medium..png';
-import discord from '../assets/discord.png';
-import X_twitter from '../assets/X_twitter.png';
+import { Discord, Medium, Telegram, X } from '../components/Icons';
+
 export default function Footer() {
   return (
     <Box
@@ -35,24 +32,27 @@ export default function Footer() {
           alignItems={'center'}
           justifyContent={'center'}
         >
-          <Image
-            src={Logo}
-            width={{
-              base: '1.6rem',
-              sm: '1.8rem',
-              md: '2rem',
-              lg: '2.2rem',
-              xl: '2.4rem',
-            }}
-            height={{
-              base: '1.6rem',
-              sm: '1.8rem',
-              md: '2rem',
-              lg: '2.2rem',
-              xl: '2.4rem',
-            }}
-            mr={{ base: '1rem', lg: '1.2rem', xl: '1.4rem' }}
-          />
+          <Link href="/">
+            <Image
+              src={Logo}
+              width={{
+                base: '1.6rem',
+                sm: '1.8rem',
+                md: '2rem',
+                lg: '2.2rem',
+                xl: '2.4rem',
+              }}
+              height={{
+                base: '1.6rem',
+                sm: '1.8rem',
+                md: '2rem',
+                lg: '2.2rem',
+                xl: '2.4rem',
+              }}
+              mr={{ base: '1rem', lg: '1.2rem', xl: '1.4rem' }}
+              cursor={'pointer'}
+            />
+          </Link>
           <Text
             whiteSpace={'nowrap'}
             fontSize={{ base: '1.2rem', md: '1.4rem' }}
@@ -80,12 +80,10 @@ export default function Footer() {
                   }}
                   py={'1rem'}
                   href={item.url}
+                  target="_blank"
                   key={item.name}
-                  _hover={{}}
+                  _hover={{ fontWeight: 'bold' }}
                   fontSize={{ base: '1.2rem', md: '1.4rem' }}
-                  onClick={() => {
-                    goto(item.url);
-                  }}
                 >
                   {item.name}
                 </Link>
@@ -105,38 +103,34 @@ export default function Footer() {
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
-              onClick={() => {
-                goto(telegram_url);
-              }}
+              href={telegram_url}
+              target="_blank"
             >
-              <Image src={telegram} />
+              <Telegram />
             </Link>
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
-              onClick={() => {
-                goto(medium_url);
-              }}
+              href={medium_url}
+              target="_blank"
             >
-              <Image src={medium} />
+              <Medium />
             </Link>
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
-              onClick={() => {
-                goto(X_twitter_url);
-              }}
+              href={X_twitter_url}
+              target="_blank"
             >
-              <Image src={X_twitter} />
+              <X />
             </Link>
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
-              onClick={() => {
-                goto(discord_url);
-              }}
+              href={discord_url}
+              target="_blank"
             >
-              <Image src={discord} />
+              <Discord />
             </Link>
           </Flex>
         </Flex>

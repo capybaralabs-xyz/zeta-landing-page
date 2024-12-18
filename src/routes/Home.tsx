@@ -5,7 +5,7 @@ import GroupLeft from '../assets/Group_left.png';
 import { CardContents } from '../utils';
 const Home = () => {
   return (
-    <Box position={'relative'} width={'100%'}>
+    <Box position={'relative'} width={'100%'} overflowX={'hidden'}>
       <Flex
         width={{ sm: '95%', xl: '1320px' }}
         m={'0 auto'}

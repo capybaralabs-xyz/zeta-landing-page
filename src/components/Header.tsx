@@ -41,31 +41,35 @@ export default function Header() {
             >
               <Image src={MenuIcon} width={'100%'}></Image>
             </Box>
-            <Image
-              src={Logo}
-              width={{
-                base: '2.7rem',
-                sm: '3rem',
-                md: '4rem',
-                lg: '5.4rem',
-                xl: '5.4rem',
-              }}
-              height={{
-                base: '2.7rem',
-                sm: '3rem',
-                md: '4rem',
-                lg: '5.4rem',
-                xl: '5.4rem',
-              }}
-              mr={'0.5rem'}
-            />
-            <Text
-              color={'rgba(255, 177, 85, 1)'}
-              fontWeight={600}
-              display={{ base: 'none', lg: 'inline' }}
-            >
-              Golden Finance
-            </Text>
+            <Link href="/">
+              <Image
+                src={Logo}
+                width={{
+                  base: '2.7rem',
+                  sm: '3rem',
+                  md: '4rem',
+                  lg: '5.4rem',
+                  xl: '5.4rem',
+                }}
+                height={{
+                  base: '2.7rem',
+                  sm: '3rem',
+                  md: '4rem',
+                  lg: '5.4rem',
+                  xl: '5.4rem',
+                }}
+                mr={'0.5rem'}
+              />
+            </Link>
+            <Link href="/" _hover={{}}>
+              <Text
+                color={'rgba(255, 177, 85, 1)'}
+                fontWeight={600}
+                display={{ base: 'none', lg: 'inline' }}
+              >
+                Golden Finance
+              </Text>
+            </Link>
             <Box display={{ base: 'none', sm: 'block' }}>
               {HeaderLinks.map((item) => {
                 return (
@@ -78,13 +82,10 @@ export default function Header() {
                     }}
                     py={'1rem'}
                     href={item.url}
+                    target="_blank"
                     key={item.name}
-                    _hover={{}}
+                    _hover={{ fontWeight: 'bold' }}
                     fontSize={{ base: '1rem', sm: '1.4rem' }}
-                    // whiteSpace={'nowrap'}
-                    onClick={() => {
-                      goto(item.url);
-                    }}
                   >
                     {item.name}
                   </Link>
