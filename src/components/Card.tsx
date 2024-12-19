@@ -106,11 +106,6 @@ export default function Card({
             sm: '20rem',
             xl: '22.8rem',
           }}
-          height={{
-            base: '17rem',
-            sm: '20rem',
-            xl: '22.8rem',
-          }}
         />
 
         {/* <Box width={'14rem'} height={'14rem'} position={'absolute'} filter={'blur(80.33px)'} top={'50%'} left={'50%'} m={'-7rem 0 0 -7rem'} bg={'rgba(255, 242, 195, 1)'}></Box> */}
