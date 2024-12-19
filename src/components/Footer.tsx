@@ -57,7 +57,7 @@ export default function Footer() {
             whiteSpace={'nowrap'}
             fontSize={{ base: '1.2rem', md: '1.4rem' }}
           >
-            Copyright © KTX.Finance, 2024. All rights reserved
+            Copyright © Golden Finance, 2024. All rights reserved
           </Text>
         </Flex>
 
