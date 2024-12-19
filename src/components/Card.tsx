@@ -7,12 +7,14 @@ export default function Card({
   remain,
   Logo,
   url,
+  id,
 }: {
   title: string;
   content: string;
   remain: string;
   Logo: string;
   url: string;
+  id: string;
 }) {
   return (
     <Flex
@@ -56,6 +58,7 @@ export default function Card({
             fontSize={{ base: '1.2rem', lg: '1.6rem' }}
             lineHeight={{ base: '1.9rem', md: '2.5rem' }}
             textAlign={{ base: 'center', md: 'left' }}
+            id={id}
           >
             {content}
           </Text>
@@ -99,12 +102,12 @@ export default function Card({
           width={{
             base: '17rem',
             sm: '20rem',
-            xl: '22.8rem',
+            md: '22.8rem',
           }}
           minW={{
             base: '17rem',
             sm: '20rem',
-            xl: '22.8rem',
+            md: '22.8rem',
           }}
         />
 

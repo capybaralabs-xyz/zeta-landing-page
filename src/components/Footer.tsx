@@ -65,7 +65,7 @@ export default function Footer() {
           justifyContent={'flex-end'}
           alignItems={'center'}
           gap={{ base: '0', sm: '0.8rem', md: '2rem', lg: '2rem', xl: '4rem' }}
-          direction={{ base: 'column-reverse', sm: 'row' }}
+          direction={{ base: 'column-reverse', md: 'row' }}
         >
           <Flex>
             {FooterLinks.map((item) => {

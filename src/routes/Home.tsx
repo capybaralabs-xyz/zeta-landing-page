@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import Card from '../components/Card';
 import GroupLeft from '../assets/Group_left.png';
 import { CardContents } from '../utils';
 const Home = () => {
+  useEffect(() => {
+    const ch = document.getElementById('card_content_1')?.clientHeight;
+    document.getElementById('card_content_2')!.style.height = `${ch}px`;
+  }, []);
   return (
     <Box position={'relative'} width={'100%'} overflowX={'hidden'}>
       <Flex
@@ -57,6 +61,7 @@ const Home = () => {
           gap={{ base: '2rem', lg: '4rem' }}
           mb={'4rem'}
           width={{ base: '100%', sm: '80%', lg: '50%' }}
+          alignItems={'stretch'}
         >
           <Card {...CardContents[0]} />
           <Card {...CardContents[1]} />

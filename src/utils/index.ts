@@ -53,6 +53,7 @@ export const CardContents = [
     remain: 'Unlock the power of leverage with KTX.Finance now!',
     Logo: Group1,
     url: trade_url,
+    id: 'card_content_1',
   },
   {
     title: 'Earn Real Yield With KLP',
@@ -61,5 +62,6 @@ export const CardContents = [
     remain: 'Earn 70% of the trading fees paid on the platform.',
     Logo: Group2,
     url: trade_url,
+    id: 'card_content_2',
   },
 ];
