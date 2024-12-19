@@ -50,15 +50,15 @@ export const CardContents = [
     title: 'Trading Perpetual Contracts',
     content:
       'Trade without any slippage and counterparty risk with up to 100x leverage completely on-chain.',
-    remain: 'Unlock the power of leverage with KTX.Finance now!',
+    remain: 'Unlock the power of leverage with Golden Finance now!',
     Logo: Group1,
     url: trade_url,
     id: 'card_content_1',
   },
   {
-    title: 'Earn Real Yield With KLP',
+    title: 'Earn Real Yield With GLP',
     content:
-      'Liquidity Providers (LPs) act as a counterparty to traders on KTX.',
+      'Liquidity Providers (LPs) act as a counterparty to traders on Golden Finance',
     remain: 'Earn 70% of the trading fees paid on the platform.',
     Logo: Group2,
     url: trade_url,
