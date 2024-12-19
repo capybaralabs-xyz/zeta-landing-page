@@ -7,7 +7,7 @@ export const HeaderLinks = [
     url: 'https://app.goldenfinance.xyz/',
   },
   {
-    name: 'KLP Pool',
+    name: 'GLP Pool',
     url: 'https://app.goldenfinance.xyz/buy_glp',
   },
   // {
