@@ -23,15 +23,15 @@ export const HeaderLinks = [
 export const FooterLinks = [
   {
     name: 'Terms and Conditions',
-    url: 'https://landing-page-paop.vercel.app/',
+    url: 'https://docs.golden.finance/miscellaneous/terms-and-conditions',
   },
   {
     name: 'Referral Terms',
-    url: 'https://landing-page-paop.vercel.app/',
+    url: 'https://docs.golden.finance/incentive-programs/referral-and-affliate-programmes',
   },
   {
     name: 'Docs',
-    url: 'https://landing-page-paop.vercel.app/',
+    url: 'https://docs.golden.finance/',
   },
 ];
 
