@@ -10,6 +10,8 @@ import {
 } from '../utils';
 import { Discord, Medium, Telegram, X } from '../components/Icons';
 
+const currentYear = new Date().getFullYear();
+
 export default function Footer() {
   return (
     <Box
@@ -57,7 +59,7 @@ export default function Footer() {
             whiteSpace={'nowrap'}
             fontSize={{ base: '1.2rem', md: '1.4rem' }}
           >
-            Copyright © Golden Finance, 2024. All rights reserved
+            Copyright © Golden Finance, {currentYear}. All rights reserved
           </Text>
         </Flex>
 

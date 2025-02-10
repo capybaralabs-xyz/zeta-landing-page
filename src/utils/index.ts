@@ -23,15 +23,15 @@ export const HeaderLinks = [
 export const FooterLinks = [
   {
     name: 'Terms and Conditions',
-    url: 'https://docs.golden.finance/miscellaneous/terms-and-conditions',
+    url: 'https://golden-finances-organization.gitbook.io/golden-finance-docs/miscellaneous/terms-and-conditions',
   },
-  {
-    name: 'Referral Terms',
-    url: 'https://docs.golden.finance/incentive-programs/referral-and-affliate-programmes',
-  },
+  // {
+  //   name: 'Referral Terms',
+  //   url: 'https://docs.golden.finance/incentive-programs/referral-and-affliate-programmes',
+  // },
   {
     name: 'Docs',
-    url: 'https://docs.golden.finance/',
+    url: 'https://golden-finances-organization.gitbook.io/golden-finance-docs',
   },
 ];
 
