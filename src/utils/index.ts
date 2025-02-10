@@ -39,10 +39,10 @@ export const goto = (url: string) => {
   window.open(url, '_blank');
 };
 
-export const telegram_url = '#';
+export const telegram_url = 'https://t.me/+nDXkiNenRyNlZTE9';
 export const medium_url = '#';
-export const X_twitter_url = '#';
-export const discord_url = '#';
+export const X_twitter_url = 'https://x.com/0xGoldenFinance';
+export const discord_url = 'https://discord.gg/sR4smstcd3';
 export const trade_url = 'https://app.goldenfinance.xyz/';
 
 export const CardContents = [

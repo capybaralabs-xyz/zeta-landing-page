@@ -113,14 +113,6 @@ export default function Footer() {
             <Link
               width={{ base: '2rem', md: '3rem' }}
               height={{ base: '2rem', md: '3rem' }}
-              href={medium_url}
-              target="_blank"
-            >
-              <Medium />
-            </Link>
-            <Link
-              width={{ base: '2rem', md: '3rem' }}
-              height={{ base: '2rem', md: '3rem' }}
               href={X_twitter_url}
               target="_blank"
             >
